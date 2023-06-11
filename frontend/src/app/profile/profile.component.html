@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choix de profil</title>
+</head>
+<body>
+<div class="container">
+    <img class="logo" src="assets/img/ricard_logo.png" alt="logo">
+  <h2>Choisissez votre profil</h2>
+
+  <div class="profile-card-container">
+    <ng-container *ngFor="let profile of profileList">
+      <div class="profile-card">
+        <!--    <img src="" alt="Profile 1">-->
+        <h3>{{profile}}</h3>
+        <p>Description du profil</p>
+        <button class="btn" onclick="selectProfile(1)">Sélectionner</button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+</body>
+</html>
