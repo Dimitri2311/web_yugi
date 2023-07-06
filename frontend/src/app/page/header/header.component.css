@@ -1,0 +1,27 @@
+/* Ajoutez ces classes CSS dans votre fichier header.component.css */
+
+.header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header .navbar {
+  margin-top: 10px;
+}
+
+.header .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.header .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+

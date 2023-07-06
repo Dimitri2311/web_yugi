@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -8,6 +9,8 @@ import {Component, OnInit} from '@angular/core';
 export class ProfileComponent implements OnInit{
 
   profileList: string[] | undefined;
+  selectedProfile: string | undefined;
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
 
@@ -15,10 +18,11 @@ export class ProfileComponent implements OnInit{
 
   }
 
+  selectProfile(profile: string) {
 
-  selectProfile(profileId: string) {
-    // Ajoutez votre logique de sélection de profil ici
-    console.log("Profil sélectionné :", profileId);
+    this.selectedProfile = profile;
+    console.log(this.selectedProfile);
   }
+
 
 }

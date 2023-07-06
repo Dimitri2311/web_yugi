@@ -26,7 +26,6 @@ body {
   background-color: #303030;
   border-radius: 8px;
   padding: 20px;
-  /*margin-bottom: 20px;*/
   cursor: pointer;
   transition: transform 0.3s ease;
   flex: 0 0 15em;

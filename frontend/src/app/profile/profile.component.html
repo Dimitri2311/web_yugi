@@ -6,6 +6,7 @@
   <title>Choix de profil</title>
 </head>
 <body>
+<app-header *ngIf="selectedProfile"></app-header>
 <div class="container">
     <img class="logo" src="assets/img/ricard_logo.png" alt="logo">
   <h2>Choisissez votre profil</h2>
@@ -16,7 +17,7 @@
         <!--    <img src="" alt="Profile 1">-->
         <h3>{{profile}}</h3>
         <p>Description du profil</p>
-        <button class="btn" onclick="selectProfile(1)">Sélectionner</button>
+        <button class="btn" (click)="selectProfile(profile)">Sélectionner</button>
       </div>
     </ng-container>
   </div>
