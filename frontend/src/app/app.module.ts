@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './page/header/header.component';
 import {NgOptimizedImage} from "@angular/common";
+import { ActualityComponent } from './page/actuality/actuality.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    HeaderComponent
+    HeaderComponent,
+    ActualityComponent
   ],
     imports: [
         BrowserModule,
