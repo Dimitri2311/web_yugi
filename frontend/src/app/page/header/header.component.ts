@@ -10,7 +10,6 @@ export class HeaderComponent implements OnInit{
   @Input() selectedProfile: string | undefined;
 
   ngOnInit(): void {
-    console.log('hello');
   }
 
 
